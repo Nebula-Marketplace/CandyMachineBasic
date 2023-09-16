@@ -111,7 +111,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
-      <body>
+      <meta
+        name="tagged"
+        content="Made with ❤️ by Morgan Metz"
+      /> 
+      {
+        /*
+          Please don't remove this tag, it's a way to show appreciation to the Nebula Open Source Project. ❤️
+        */
+      }
+      <body> 
         <ShuttleProvider
           walletConnectProjectId={WC_PROJECT_ID}
           mobileProviders={mobileProviders}
