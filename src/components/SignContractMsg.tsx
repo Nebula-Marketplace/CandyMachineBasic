@@ -17,7 +17,7 @@ export function SignMessage() {
   const contract_address = "";
   const mint_price = 1 * (10 ** 18) + (10**18) * 0.03; // 1.03 INJ, 0.03 INJ is Nebula fee
   const mint_msg: Mint = {};
-  const sender = wallet.account.address;
+  const sender = wallet?.account.address;
 
   const onSign = () => {
     sign({
